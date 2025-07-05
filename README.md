@@ -1,10 +1,10 @@
 # Portofolio Pengembang Game - AlifAddarisalam
 
-![my-logo](Images/my-logo.png)
+![Logo Alif-Store](images/my-logo.png)
 
 Ini adalah kode sumber untuk situs web portofolio pribadi saya, yang dibuat untuk menampilkan profil, keterampilan, dan proyek saya sebagai pengembang game Android. Proyek ini sepenuhnya responsif dan dibangun dengan HTML, Tailwind CSS, dan JavaScript untuk fungsionalitas dinamis.
 
-![Tangkapan Layar Proyek](Images/my-project.png)
+![Tangkapan Layar Proyek](images/my-project.png)
 
 ## ✨ Fitur Utama
 
@@ -47,7 +47,7 @@ Untuk menjalankan proyek ini di mesin lokal Anda, ikuti langkah-langkah berikut:
 Anda dapat dengan mudah menyesuaikan portofolio ini untuk kebutuhan Anda sendiri:
 
 -   **Konten Teks**: Ubah semua informasi teks seperti "About Me", "Vision", "Mission", dan deskripsi game langsung di file `index.html`.
--   **Gambar**: Ganti gambar logo (`images/alif-store-logo.png`) dan ikon game di bagian portfolio dengan gambar Anda sendiri. Pastikan untuk memperbarui path `src` di dalam tag `<img>`.
+-   **Gambar**: Ganti gambar logo (`images/my-logo.png`) dan ikon game di bagian portfolio dengan gambar Anda sendiri. Pastikan untuk memperbarui path `src` di dalam tag `<img>`.
 -   **Tautan Sosial**: Perbarui tautan `href` untuk GitHub, Instagram, dan itch.io di bagian "Follow My Work" agar mengarah ke profil Anda.
 -   **Warna**: Skema warna utama (ungu dan biru) dapat diubah dengan mengedit kelas gradien (`gradient-bg`) di `style.css` dan kelas warna Tailwind (`bg-purple-600`, `text-purple-600`, dll.) di `index.html`.
 
