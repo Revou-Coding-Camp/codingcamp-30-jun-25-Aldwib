@@ -3,9 +3,314 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>AlifAddarisalam - Android Game Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Style/style.css">
 </head>
-<body>
-    <h1>my porto</h1>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white navbar-shadow fixed w-full top-0 z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div>
+                    <img src="images/my-logo.png" alt="Logo Alif-Store" class="h-8 w-auto">
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-purple-600 transition duration-300">Home</a>
+                    <a href="#profile" class="text-gray-700 hover:text-purple-600 transition duration-300">My Profile</a>
+                    <a href="#portfolio" class="text-gray-700 hover:text-purple-600 transition duration-300">Portfolio</a>
+                    <a href="#contact" class="text-gray-700 hover:text-purple-600 transition duration-300">Message Me</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-toggle" class="text-gray-700">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
+                <a href="#home" class="block py-2 text-gray-700 hover:text-purple-600">Home</a>
+                <a href="#profile" class="block py-2 text-gray-700 hover:text-purple-600">Our Profile</a>
+                <a href="#portfolio" class="block py-2 text-gray-700 hover:text-purple-600">Portfolio</a>
+                <a href="#contact" class="block py-2 text-gray-700 hover:text-purple-600">Message Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="gradient-bg section-padding mt-16 text-white">
+        <div class="container mx-auto px-6 text-center">
+            <div class="max-w-4xl mx-auto">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6">
+                    Hi <span id="user-name" class="typing-animation">There!</span> Welcome To My Portfolio
+                </h1>
+                <p class="text-xl md:text-2xl mb-8 opacity-90">
+                    Beginner Android Game Developer using Unity
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="#portfolio" class="bg-white text-purple-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition duration-300">
+                        View My Games
+                    </a>
+                    <a href="#contact" class="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-purple-600 transition duration-300">
+                        Contact Me
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Profile Section -->
+    <section id="profile" class="section-padding bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">My Profile</h2>
+                <div class="w-24 h-1 bg-purple-600 mx-auto rounded-full"></div>
+            </div>
+            
+            <!-- Photo Banner -->
+            <div class="mb-16">
+                <div class="relative h-64 md:h-96 bg-gradient-to-r from-purple-600 to-blue-600 rounded-lg overflow-hidden">
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <div class="text-center text-white">
+                            <i class="fas fa-code text-6xl mb-4 opacity-80"></i>
+                            <h3 class="text-2xl md:text-4xl font-bold">Android Game Developer</h3>
+                            <p class="text-lg md:text-xl opacity-90">A Unity Expert & Mobile Game Specialist</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- About Company -->
+            <div class="grid md:grid-cols-2 gap-12 mb-16">
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">About Me</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        I am a passionate Android game developer with expertise in Unity game engine. I specialize in creating engaging and entertaining mobile games that provide great user experiences.
+                    </p>
+                    <p class="text-gray-600 leading-relaxed">
+                        With a focus on casual gaming, I develop games that are accessible to everyone and can be enjoyed anytime, anywhere. My games are optimized for all Android devices.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">Technical Skills</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-3">
+                            <i class="fab fa-unity text-2xl text-purple-600"></i>
+                            <span class="text-gray-700">Unity Game Engine</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-mobile-alt text-2xl text-orange-600"></i>
+                            <span class="text-gray-700">Android Studio</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fab fa-android text-2xl text-green-600"></i>
+                            <span class="text-gray-700">Android Development</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-code text-2xl text-blue-600"></i>
+                            <span class="text-gray-700">C#; Java; Python Programming</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Vision & Mission -->
+            <div class="bg-gray-50 rounded-lg p-8">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Vision</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            To become a leading Android game developer in Indonesia, creating innovative and entertaining games that bring joy to millions of players worldwide.
+                        </p>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Mission</h3>
+                        <ul class="text-gray-600 space-y-2">
+                            <li>• Develop high-quality casual games for Android platform</li>
+                            <li>• Create user-friendly and engaging gaming experiences</li>
+                            <li>• Continuously improve and update existing games</li>
+                            <li>• Provide excellent support for game users</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section-padding bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">My Games</h2>
+                <div class="w-24 h-1 bg-purple-600 mx-auto rounded-full"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div> <div class="bg-white rounded-lg overflow-hidden shadow-lg card-hover">
+                        <div>
+                            <img src="images/paperplane-icon.png" alt="Ikon Game PaperPlane" class="w-full h-48 object-cover">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-gray-800 mb-2">PaperPlane 2.0</h3>
+                            <p class="text-gray-600 mb-4">A casual game that can be played anytime you want. Now available in version 1.2 with better upgrades from the previous version.</p>
+                            <div class="flex items-center justify-between">
+                                <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Android</span>
+                                <a href="https://alifaddarisalam.itch.io/paperplane20" target="_blank" class="text-purple-600 hover:text-purple-800 font-semibold">
+                                    Download Game <i class="fas fa-external-link-alt ml-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div> <div class="bg-white rounded-lg overflow-hidden shadow-lg card-hover">
+                        <div>
+                            <img src="images/quizzical-icon.jpg" alt="Ikon Game QUIZZICAL" class="w-full h-48 object-cover">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-gray-800 mb-2">QUIZZICAL</h3>
+                            <p class="text-gray-600 mb-4">Game ini merupakan mini projek pemrograman mobile saya, dengan Konsep permainan kuis sederhana</p>
+                            <div class="flex items-center justify-between">
+                                <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Android</span>
+                                <a href="https://alifaddarisalam.itch.io/quizzical" target="_blank" class="text-purple-600 hover:text-purple-800 font-semibold">
+                                    Download Game <i class="fas fa-external-link-alt ml-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-6">
+                    <div class="bg-white rounded-lg p-6 shadow-lg card-hover">
+                        <div class="flex items-center space-x-4">
+                            <div class="bg-purple-100 p-3 rounded-full">
+                                <i class="fas fa-gamepad text-2xl text-purple-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold text-gray-800">Games Published</h4>
+                                <p class="text-2xl font-bold text-purple-600">2+</p> </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg p-6 shadow-lg card-hover">
+                        <div class="flex items-center space-x-4">
+                            <div class="bg-blue-100 p-3 rounded-full">
+                                <i class="fas fa-download text-2xl text-blue-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold text-gray-800">Platform</h4>
+                                <p class="text-2xl font-bold text-blue-600">Android</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Message Me</h2>
+                <div class="w-24 h-1 bg-purple-600 mx-auto rounded-full"></div>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12">
+                <!-- Contact Form -->
+                <div class="bg-gray-50 rounded-lg p-8">
+                    <form id="contact-form" class="space-y-6">
+                        <div>
+                            <label class="block text-gray-700 text-sm font-medium mb-2">Name</label>
+                            <input type="text" id="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-600" placeholder="Your Name" required>
+                            <span id="name-error" class="text-red-500 text-sm hidden">Please enter your name</span>
+                        </div>
+                        
+                        <div>
+                            <label class="block text-gray-700 text-sm font-medium mb-2">Email</label>
+                            <input type="email" id="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-600" placeholder="Your Email" required>
+                            <span id="email-error" class="text-red-500 text-sm hidden">Please enter a valid email</span>
+                        </div>
+                        
+                        <div>
+                            <label class="block text-gray-700 text-sm font-medium mb-2">Phone Number</label>
+                            <input type="tel" id="phone" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-600" placeholder="Your Phone Number" required>
+                            <span id="phone-error" class="text-red-500 text-sm hidden">Please enter your phone number</span>
+                        </div>
+                        
+                        <div>
+                            <label class="block text-gray-700 text-sm font-medium mb-2">Message</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-600" placeholder="Your Message" required></textarea>
+                            <span id="message-error" class="text-red-500 text-sm hidden">Please enter your message</span>
+                        </div>
+                        
+                        <button type="submit" class="w-full gradient-bg text-white py-3 rounded-lg font-semibold hover:opacity-90 transition duration-300">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="space-y-8">
+                    <div class="bg-gray-50 rounded-lg p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">Contact Information</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-envelope text-purple-600"></i>
+                                <span class="text-gray-700">Alifaddarisalam123@gmail.com</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-phone text-purple-600"></i>
+                                <span class="text-gray-700">+6281261270634</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-map-marker-alt text-purple-600"></i>
+                                <span class="text-gray-700">Indonesia</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-50 rounded-lg p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">Follow My Work</h3>
+                        <div class="flex space-x-4">
+                            <a href="https://alifaddarisalam.itch.io" target="_blank" class="bg-purple-600 text-white p-3 rounded-full hover:bg-purple-700 transition duration-300">
+                                <i class="fas fa-gamepad"></i>
+                            </a>
+                            <a href="https://www.instagram.com/alif_addarisalam.w/" target="_blank" class="bg-pink-500 text-white p-3 rounded-full hover:bg-blue-700 transition duration-300">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://github.com/Aldwib" target="_blank" class="bg-gray-800 text-white p-3 rounded-full hover:bg-gray-900 transition duration-300">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2024 AlifAddarisalam. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Success Modal -->
+    <div id="success-modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+        <div class="bg-white rounded-lg p-8 m-4 max-w-md w-full">
+            <div class="text-center">
+                <i class="fas fa-check-circle text-4xl text-green-500 mb-4"></i>
+                <h3 class="text-xl font-bold text-gray-800 mb-2">Message Sent Successfully!</h3>
+                <p class="text-gray-600 mb-4">Thank you for your message. I'll get back to you soon!</p>
+                <button id="close-modal" class="bg-purple-600 text-white px-6 py-2 rounded-lg hover:bg-purple-700 transition duration-300">
+                    Close
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="Javascript/script.js"></script>
 </body>
 </html>

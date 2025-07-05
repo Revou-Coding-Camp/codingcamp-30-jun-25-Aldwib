@@ -1,0 +1,294 @@
+/* Custom CSS Styles */
+
+/* Gradient Background */
+.gradient-bg {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+/* Card Hover Effects */
+.card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+/* Glow Effect */
+.glow {
+    box-shadow: 0 0 20px rgba(102, 126, 234, 0.5);
+}
+
+/* Typing Animation */
+.typing-animation {
+    border-right: 2px solid #667eea;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%, 50% { 
+        border-color: #667eea; 
+    }
+    51%, 100% { 
+        border-color: transparent; 
+    }
+}
+
+/* Navbar Shadow */
+.navbar-shadow {
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* Section Padding */
+.section-padding {
+    padding: 80px 0;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #667eea;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #764ba2;
+}
+
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Form Focus States */
+input:focus, textarea:focus {
+    outline: none;
+    ring: 2px;
+    ring-color: #667eea;
+    border-color: #667eea;
+}
+
+/* Button Hover Effects */
+.btn-primary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
+}
+
+/* Mobile Responsive Adjustments */
+@media (max-width: 768px) {
+    .section-padding {
+        padding: 60px 0;
+    }
+    
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    .text-4xl {
+        font-size: 2.5rem;
+    }
+    
+    .text-6xl {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .section-padding {
+        padding: 40px 0;
+    }
+    
+    .text-4xl {
+        font-size: 2rem;
+    }
+    
+    .text-6xl {
+        font-size: 2.5rem;
+    }
+}
+
+/* Animation Classes */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Hero Section Enhancements */
+.hero-content {
+    animation: fadeInUp 1s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Portfolio Card Animations */
+.portfolio-card {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease;
+}
+
+.portfolio-card.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Contact Form Enhancements */
+.form-group {
+    position: relative;
+}
+
+.form-input {
+    transition: all 0.3s ease;
+}
+
+.form-input:focus {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.2);
+}
+
+/* Success Modal Animation */
+.modal-enter {
+    opacity: 0;
+    transform: scale(0.9);
+}
+
+.modal-enter-active {
+    opacity: 1;
+    transform: scale(1);
+    transition: all 0.3s ease;
+}
+
+/* Footer Styling */
+footer {
+    background: linear-gradient(135deg, #2d3748 0%, #1a202c 100%);
+}
+
+/* Social Icons */
+.social-icon {
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* Loading Animation */
+.loading {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(255,255,255,.3);
+    border-radius: 50%;
+    border-top-color: #fff;
+    animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* Skill Icons */
+.skill-icon {
+    transition: all 0.3s ease;
+}
+
+.skill-icon:hover {
+    transform: scale(1.1);
+    color: #667eea;
+}
+
+/* Profile Banner */
+.profile-banner {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.profile-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" fill="white" opacity="0.1"><polygon points="0,100 1000,0 1000,100"/></svg>');
+    background-size: cover;
+}
+
+/* Game Card Styling */
+.game-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.game-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+/* Stats Card */
+.stats-card {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.stats-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.12);
+}
+
+/* Error Message Styling */
+.error-message {
+    background: #fee2e2;
+    color: #dc2626;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    margin-top: 0.5rem;
+    font-size: 0.875rem;
+}
+
+/* Success Message Styling */
+.success-message {
+    background: #dcfce7;
+    color: #16a34a;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    margin-top: 0.5rem;
+    font-size: 0.875rem;
+}
