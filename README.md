@@ -1,10 +1,10 @@
 # Portofolio Pengembang Game - AlifAddarisalam
 
-![Logo Alif-Store](images/my-logo.png)
+![Logo Alif-Store](images/my_logo.png)
 
 Ini adalah kode sumber untuk situs web portofolio pribadi saya, yang dibuat untuk menampilkan profil, keterampilan, dan proyek saya sebagai pengembang game Android. Proyek ini sepenuhnya responsif dan dibangun dengan HTML, Tailwind CSS, dan JavaScript untuk fungsionalitas dinamis.
 
-![Tangkapan Layar Proyek](images/my-project.png)
+![Tangkapan Layar Proyek](images/my_project.png)
 
 ## ✨ Fitur Utama
 
